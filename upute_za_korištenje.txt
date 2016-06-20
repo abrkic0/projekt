@@ -1,0 +1,30 @@
+﻿Potrebni fileovi u radnom folderu:
+analiza.m       			 - računa statistike vezane uz predikcije
+cost_fun.m		 		 - mjera entropije
+make_mfcc.m				 - pomoćna funkcija pri računanju MFCC koeficijenata
+mfcc.m					 - računa MFCC koeficijente
+model_neural_net.m       		 - glavna skripta koja automatizira traženje najbolje neuronske mreze
+model_svm.m				 - glavna skripta koja automatizira traženje najboljeg SVM-a
+moj_mfcc.m				 - pomoćna funkcija pri računanju MFCC koeficijenata
+pct_frame_scores.m			 - pomoćna funkcija kod usrednjivanja rezultata klasifikacije za svaki zapis
+train_val_test.m			 - skripta koja iz baze čita zapise i radi .mat datoteke
+train_val_test_elio.m    	         - skripta koja iz baze čita zapise i radi .mat datoteke
+trifbank.m				 - pomoćna funkcija koju koristi MFCC.m
+ucitaj.m				 - funkcija za lakše učitavanje iz naše baze
+vec2frames.m			 	 - pomoćna funkcija koju koristi MFCC.m
+
+I pristup bazi podataka koja treba biti 
+	nadfolder_trenutnog_radnog_foldera -> Dataset-> otklj
+	
+Ukoliko nismo naštimali pristup bazi možemo koristiti već sređene podatke
+pogodne za učitavanje u matlab (dobivene pomoću train_val_test.m i train_val_test_elio.m):
+anci_test.mat
+anci_val.mat
+anci_train.mat
+
+elio_test.mat
+elio_val.mat
+elio_train.mat
+
+Za traženje najbolje neuronske mreže i testiranja pokrenuti model_neural_net.
+Za traženje najboljeg SVM-a pokrenuto model_svm.
